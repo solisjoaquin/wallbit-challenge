@@ -1,4 +1,6 @@
-![Wallbit](./assets/logo.svg)
+[![Wallbit](./assets/logo.svg)](https://wallbit.io/)
+
+> El banco digital para trabajadores remotos.
 
 # Wallbit Junior Frontend Challenge
 
