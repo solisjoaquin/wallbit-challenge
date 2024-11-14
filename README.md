@@ -4,7 +4,7 @@
 
 # Wallbit Junior Frontend Challenge
 
-Para este desafío, nuestro cliente nos encargó hacer un carrito de para programadores. Tiene un formulario con 2 campos: ID del producto y cantidad. Los programadores habitualmente no necesitan saber ni ver que productos comprar, sino que saben por conexiones astrales cual es el ID del producto que quieren y así los agregan a su carrito.
+Para este desafío, nuestro cliente nos encargó hacer un carrito de compras para programadores. Tiene un formulario con 2 campos: ID del producto y cantidad. Los programadores habitualmente no necesitan saber ni ver que productos comprar, sino que saben por conexiones astrales cual es el ID del producto que quieren y así los agregan a su carrito.
 
 Cada vez que se agrega un producto, vamos a obtener el producto desde la API y lo vamos a mostrar en una tabla, junto a la cantidad que el usuario eligió.
 
@@ -51,6 +51,9 @@ Para destacar, podés agregar cualquier cosa que se te ocurra que llame la atenc
 Se va a entregar un premio en vivo durante [mi stream](https://twitch.tv/goncypozzo) el 19 de Noviembre a las 19:00hs Argentina (GMT -3) entre todos los que completen el desafío. El premio va a ser un micrófono Razer Seiren Mini.
 
 El ganador va a ser elegido por el chat, la gente de Wallbit y yo.
+
+> [!IMPORTANT]
+> El ganador debe estar presente en el stream para recibir el premio.
 
 ![Razer Seiren Mini](./assets/sorteo.jpg)
 
