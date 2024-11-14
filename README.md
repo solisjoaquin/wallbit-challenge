@@ -10,10 +10,10 @@ Cada vez que se agrega un producto, vamos a obtener el producto desde la API y l
 
 La aplicación se vería así:
 
-![Sin productos](./assets/app-0.png)
+![Sin productos](./assets/app-0.jpg)
 > Inicialmente no hay productos en el carrito
 
-![Con productos](./assets/app-1.png)
+![Con productos](./assets/app-1.jpg)
 > Con productos en el carrito
 
 ## Requisitos
@@ -47,7 +47,7 @@ Para destacar, podés agregar cualquier cosa que se te ocurra que llame la atenc
 
 Se va a hacer un sorteo en vivo durante [mi stream](https://twitch.tv/goncypozzo) el 19 de Noviembre a las 19:00hs Argentina (GMT -3) entre todos los que completen el desafío. El premio va a ser un micrófono Razer Seiren Mini.
 
-![Razer Seiren Mini](./assets/sorteo.png)
+![Razer Seiren Mini](./assets/sorteo.jpg)
 
 > En caso de no poder enviarse el premio, se pagará el equivalente de 70 USD.
 
