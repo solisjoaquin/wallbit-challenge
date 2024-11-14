@@ -48,7 +48,7 @@ Para destacar, podés agregar cualquier cosa que se te ocurra que llame la atenc
 
 ## Premio
 
-Se va a entregar un premio en vivo durante [mi stream](https://twitch.tv/goncypozzo) el 19 de Noviembre a las 19:00hs Argentina (GMT -3) entre todos los que completen el desafío. El premio va a ser un micrófono Razer Seiren Mini.
+Se va a entregar un premio en vivo durante [mi stream](https://twitch.tv/goncypozzo) el 19 de Noviembre de 2024 a las 19:00hs Argentina (GMT -3) entre todos los que completen el desafío. El premio va a ser un micrófono Razer Seiren Mini.
 
 El ganador va a ser elegido por el chat, la gente de Wallbit y yo.
 
@@ -59,7 +59,7 @@ El ganador va a ser elegido por el chat, la gente de Wallbit y yo.
 
 > En caso de no poder enviarse el premio, se pagará el equivalente de 70 USD.
 
-El deadline para enviar el PR es el 19 de Noviembre a las 15:00hs Argentina (GMT -3).
+El deadline para enviar el PR es el 19 de Noviembre de 2024 a las 15:00hs Argentina (GMT -3).
 
 > [!IMPORTANT]
 > Los PRs se cerrarán luego de esa hora así que no te olvides de hacerlo antes.
