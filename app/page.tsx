@@ -279,9 +279,7 @@ export default function Component() {
 
       <Card>
         <CardHeader>
-          <CardTitle className="text-sm text-muted-foreground">
-            Empezaste tu carrito el {creationDate}
-          </CardTitle>
+          <CardTitle className="text-lg">Articulos agregados</CardTitle>
         </CardHeader>
         <CardContent>
           <div className="overflow-x-auto">
@@ -334,10 +332,10 @@ export default function Component() {
               </TableBody>
               <TableBody>
                 <TableRow>
-                  <TableCell colSpan={3} className="font-bold">
+                  <TableCell colSpan={3} className="text-muted-foreground">
                     Subtotal:
                   </TableCell>
-                  <TableCell colSpan={3} className="font-bold">
+                  <TableCell colSpan={3} className="text-muted-foreground">
                     ${subtotal.toFixed(2)}
                   </TableCell>
                 </TableRow>
@@ -362,6 +360,9 @@ export default function Component() {
               </TableBody>
             </Table>
           </div>
+          <p className="text-sm text-muted-foreground pt-6">
+            Empezaste tu carrito el {creationDate}
+          </p>
         </CardContent>
       </Card>
 
