@@ -87,7 +87,6 @@ export default function Component() {
   }, [error]);
 
   const addToCart = async (productId: string, quantity: string) => {
-    console.log("Agregando producto al carrito...");
     try {
       setError("");
       const response = await fetch(
