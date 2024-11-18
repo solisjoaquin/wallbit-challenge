@@ -297,6 +297,13 @@ export default function Component() {
                 </TableRow>
               </TableHeader>
               <TableBody>
+                {cart.length === 0 && (
+                  <TableRow>
+                    <TableCell colSpan={6} className="text-center py-16">
+                      No hay productos en el carrito
+                    </TableCell>
+                  </TableRow>
+                )}
                 {cart.map((item) => (
                   <TableRow key={item.id}>
                     <TableCell>{item.quantity}</TableCell>
