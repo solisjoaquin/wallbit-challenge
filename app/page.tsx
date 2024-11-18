@@ -63,7 +63,7 @@ export default function Component() {
   const { theme, setTheme } = useTheme();
 
   console.log(
-    "Encontraste el primer codigo secreto: GONCY10. Ahora busca los otros dos para obtener un descuento mayor. 😎"
+    "Encontraste el primer codigo secreto: GONCY10. Busca otro para un descuento mayor. 😎. Pista: haz varios clicks en un componente"
   );
 
   useEffect(() => {
@@ -168,7 +168,7 @@ export default function Component() {
       setAppliedDiscount(discount);
       setDiscountCode("");
     } else {
-      setError("Invalid discount code");
+      setError("Codigo de descuento invalido");
     }
   };
 
@@ -261,7 +261,7 @@ export default function Component() {
 
       {error && (
         <Alert variant="destructive">
-          <AlertDescription className="flex items-center gap-2">
+          <AlertDescription className="flex items-center gap-2 dark:text-red-300">
             <XCircle className="h-4 w-4" />
             {error}
           </AlertDescription>
