@@ -272,7 +272,7 @@ export default function Component() {
         <Alert>
           <AlertDescription className="flex items-center gap-2">
             <Gift className="h-4 w-4" />
-            Encontraste el tercer codigo secreto: RAZER. Ahora puedes aplicar el
+            Encontraste un nuevo codigo secreto: RAZER. Ahora puedes aplicar el
             descuento. 😎
           </AlertDescription>
         </Alert>
