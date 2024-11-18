@@ -229,7 +229,7 @@ export default function Component() {
                 min="1"
                 value={quantity}
                 onChange={(e) => setQuantity(e.target.value)}
-                placeholder="Enter quantity"
+                placeholder="Selecciona la cantidad"
               />
             </div>
             <div className="flex-1 space-y-2 w-full">
@@ -242,7 +242,7 @@ export default function Component() {
                 min="1"
                 value={productId}
                 onChange={(e) => setProductId(e.target.value)}
-                placeholder="Enter product ID"
+                placeholder="Ingresa el ID del producto"
               />
             </div>
             <Button
@@ -280,7 +280,7 @@ export default function Component() {
       <Card>
         <CardHeader>
           <CardTitle className="text-sm text-muted-foreground">
-            Shopping Cart - Creado el {creationDate}
+            Empezaste tu carrito el {creationDate}
           </CardTitle>
         </CardHeader>
         <CardContent>
