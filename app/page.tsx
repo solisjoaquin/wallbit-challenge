@@ -6,6 +6,7 @@ import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
+
 import {
   Table,
   TableBody,
@@ -14,7 +15,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { XCircle, Moon, Sun, Trash2 } from "lucide-react";
+import { XCircle, Moon, Sun, Trash2, Gift } from "lucide-react";
 import { useTheme } from "next-themes";
 
 interface Product {
@@ -85,7 +86,8 @@ export default function Component() {
     }
   }, [error]);
 
-  const addToCart = async () => {
+  const addToCart = async (productId: string, quantity: string) => {
+    console.log("Agregando producto al carrito...");
     try {
       setError("");
       const response = await fetch(
@@ -148,8 +150,8 @@ export default function Component() {
         const randomIndex = Math.floor(Math.random() * similarProducts.length);
 
         setRecommendedProduct(similarProducts[randomIndex]);
-        setProductId(similarProducts[randomIndex].id.toString());
-        setQuantity("1");
+        /* setProductId(similarProducts[randomIndex].id.toString());
+        setQuantity("1"); */
       } else {
         setRecommendedProduct(null);
       }
@@ -170,6 +172,29 @@ export default function Component() {
     }
   };
 
+  const [clickCount, setClickCount] = useState(0);
+  const [showSecret, setShowSecret] = useState(false);
+
+  const handleClick = () => {
+    const newCount = clickCount + 1;
+    setClickCount(newCount);
+
+    if (newCount === 5) {
+      console.log("Encontraste un nuevo codigo secreto: AGUANTEWALLBIT 😎");
+      setClickCount(0); // Reset the count
+    }
+  };
+
+  useEffect(() => {
+    if (clickCount === 3) {
+      setShowSecret(true);
+      const timer = setTimeout(() => {
+        setShowSecret(false);
+      }, 5000);
+      return () => clearTimeout(timer);
+    }
+  }, [clickCount]);
+
   const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
   const subtotal = cart.reduce((sum, item) => sum + item.totalPrice, 0);
   const discountAmount = subtotal * appliedDiscount;
@@ -178,7 +203,9 @@ export default function Component() {
   return (
     <div className="max-w-4xl mx-auto p-4 space-y-4">
       <div className="flex justify-between items-center">
-        <h1 className="text-2xl font-bold">Wallbit</h1>
+        <h1 className="text-2xl font-bold" onClick={handleClick}>
+          Wallbit
+        </h1>
         <Button
           variant="ghost"
           size="icon"
@@ -220,7 +247,9 @@ export default function Component() {
               />
             </div>
             <Button
-              onClick={addToCart}
+              onClick={() => {
+                addToCart(productId, quantity);
+              }}
               disabled={!quantity || !productId}
               className="w-full sm:w-auto"
             >
@@ -235,6 +264,16 @@ export default function Component() {
           <AlertDescription className="flex items-center gap-2">
             <XCircle className="h-4 w-4" />
             {error}
+          </AlertDescription>
+        </Alert>
+      )}
+
+      {showSecret && (
+        <Alert>
+          <AlertDescription className="flex items-center gap-2">
+            <Gift className="h-4 w-4" />
+            Encontraste el tercer codigo secreto: RAZER. Ahora puedes aplicar el
+            descuento. 😎
           </AlertDescription>
         </Alert>
       )}
@@ -357,9 +396,9 @@ export default function Component() {
               </div>
               <Button
                 onClick={() => {
-                  setProductId(recommendedProduct.id.toString());
-                  setQuantity("1");
-                  addToCart();
+                  // setProductId(recommendedProduct.id.toString());
+                  // setQuantity("1");
+                  addToCart(recommendedProduct.id.toString(), "1");
                 }}
               >
                 Agregar
