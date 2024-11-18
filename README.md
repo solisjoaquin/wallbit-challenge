@@ -2,6 +2,22 @@
 
 > El banco digital para trabajadores remotos.
 
+![demo](./assets/app-2.png)
+
+# Configuracion del proyecto
+
+para instalar las dependencias correr el comando:
+
+```
+npm i
+```
+
+Para levantar el proyecto
+
+```
+npm run dev
+```
+
 # Wallbit Junior Frontend Challenge
 
 Para este desafío, nuestro cliente nos encargó hacer un carrito de compras para programadores. Tiene un formulario con 2 campos: ID del producto y cantidad. Los programadores habitualmente no necesitan saber ni ver que productos comprar, sino que saben por conexiones astrales cual es el ID del producto que quieren y así los agregan a su carrito.
@@ -13,25 +29,27 @@ Cada vez que se agrega un producto, vamos a obtener el producto desde la API y l
 La aplicación se vería así:
 
 ![Sin productos](./assets/app-0.jpg)
+
 > Inicialmente no hay productos en el carrito
 
 ![Con productos](./assets/app-1.jpg)
+
 > Con productos en el carrito
 
 ## Requisitos
 
 La API que nos dió nuestro cliente es: [Fake Store API](https://fakestoreapi.com/). El cliente nos dijo que su stack de frontend es React, que prefiere el challenge hecho con eso, pero está abierto a cualquier stack que quieras usar.
 
-- [ ] Podemos agregar productos al carrito.
-- [ ] Manejar errores que nos devuelva la API.
-- [ ] Mostrar una lista con los productos agregados incluyendo `title`, `price` e `image` del producto y la `cantidad` que el usuario agregó.
+- [x] Podemos agregar productos al carrito.
+- [x] Manejar errores que nos devuelva la API.
+- [x] Mostrar una lista con los productos agregados incluyendo `title`, `price` e `image` del producto y la `cantidad` que el usuario agregó.
 
 ## Extras
 
-- [ ] El carrito se persiste al recargar la página.
-- [ ] Mostrar el total de productos agregados.
-- [ ] Mostrar el costo total del carrito.
-- [ ] Mostrar la fecha de creación del carrito.
+- [x] El carrito se persiste al recargar la página.
+- [x] Mostrar el total de productos agregados.
+- [x] Mostrar el costo total del carrito.
+- [x] Mostrar la fecha de creación del carrito.
 
 ## Bonus
 
